@@ -1,0 +1,33 @@
+.checkbox{
+    font-size: 8px;
+    input{
+        display: none;
+        &:checked + label {
+            background-color: #bada53;
+        }
+        &:checked + label::after{
+            left: calc(100% - 0.5em);
+            transform: translate(-100%);
+        }
+    }
+   
+    label{
+        width: 20em;
+        height: 10em;
+        display: block;
+        background-color: grey;
+        border-radius: 10em;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 9em;
+            height: 9em;
+            border-radius: 9em;
+            background-color: brown;
+            top: .5em;
+            left: .5em;
+            transition: .3s;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.card{
+    width: 150px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: box-shadow .5s , transform .25s ;
+    
+    svg{
+        font-size: 50px;
+        color: rgb(255, 0, 0);
+    }
+    h4{
+        text-align: center;
+        color: rgb(255, 0, 0);
+    }
+    &:hover{
+        transform:  rotateZ(20deg) skew(-10deg,-5deg);
+        box-shadow: 
+        rgba(255,255,255,.5) 5px 3px,
+        rgba(255,255,255,.4) 10px 6px,
+        rgba(255,255,255,.3) 15px 9px;
+        transition: box-shadow .75s , transform .375s;
+    }
+}
