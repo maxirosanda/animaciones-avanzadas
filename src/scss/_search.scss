@@ -1,0 +1,32 @@
+.search{
+    font-size: 8px;
+    padding: 1em;
+    width: max-content;
+    color: #eee;
+    background: linear-gradient(to bottom right , #b1227a,#429aee);
+    border-radius: .4em;
+    display: flex;
+    align-items: center;
+    
+    input , button{
+        color: inherit;
+        border: 0;
+        background-color: transparent;
+        outline: none;
+    }
+    input{
+        width: 0;
+        transition: 0.5s;
+    }
+    button{
+        width: 2.5em;
+        height: 2.5em;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+    &:focus-within input {
+        width: 20em;
+        
+    }
+}

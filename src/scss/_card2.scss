@@ -1,0 +1,42 @@
+.card2{
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 15em;
+    width: 10em;
+    background-color: #191919;
+    border-radius: 1em;
+    overflow: hidden;
+    span{
+        position: absolute;
+        z-index: 2;
+        color: white;
+    }
+    &::before{
+        content: "";
+        width: 6em;
+        height: 30em;
+        left: 1em;
+        top: -7em;
+        position: absolute;
+        background-image: linear-gradient(#00e5ff,#b400fb);
+        animation:  animate 5s linear infinite;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: #191919;
+        inset: .3em;
+        border-radius: .5em;
+    }
+}
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}

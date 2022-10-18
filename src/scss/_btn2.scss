@@ -1,0 +1,24 @@
+.btn2{
+    font-size: 44px;
+    color: white;
+    border: none;
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #4feaff;
+    transition: .3s;
+    animation: pulse .5s;
+    &:active{
+        transform: scale(0.85);
+        animation: none;
+    }
+}
+@keyframes pulse {
+    from{
+        box-shadow: #69bcff 0 0 0;
+    }
+    to{
+        box-shadow: #69bcff 0 0 24px;
+    }
+}
