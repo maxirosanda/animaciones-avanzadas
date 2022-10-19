@@ -1,0 +1,18 @@
+.btn3{
+    font-size: 14px;
+    padding: 1em;
+    width: 12em;
+    height: 4em;
+    cursor: pointer;
+    background-color: #799be6;
+    color: white;
+    border-radius: .5em;
+    border: none;
+    transition: .5s ease;
+    &:hover{
+        background-color: transparent;
+        border: .2em solid #799be6;
+        box-shadow: 0 0 1em 0 #799be6 inset,0 0 1em .4em #799be6 ;
+
+    }
+}

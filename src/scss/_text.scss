@@ -1,0 +1,56 @@
+ .hero{
+    font-size:5px;
+    display: flex;
+    height: 9em;
+    & > div{
+        color: rgb(253, 0, 0);
+        font-size: 6em;
+        font-weight: 400;
+    }
+    ul{
+        margin-left: 1.5em;
+        overflow: hidden;
+        li{
+            list-style: none;
+            color:rgb(253, 0, 0) ;
+            font-size: 6em;
+            font-weight: 500;
+            position: relative;
+            top: 0;
+            animation: slide 12s steps(4) infinite;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 1.2em;
+                width: 100%;
+                background-color: white;
+                border-left: .1em solid rgb(202, 12, 12);
+                animation: typing 3s steps(10) infinite;
+
+            }
+            span{
+                position: relative;
+                margin: 0.1em 0;
+                line-height: 1.5em;
+                top: -.16em;
+            }
+        }
+    }
+ }
+ @keyframes typing {
+    40%,60%{
+        left: calc(100% + .5em);
+    }
+    100%{
+        left: 0;
+    }
+    
+ }
+
+ @keyframes slide {
+     100%{
+        top: -6em;
+    
+ }
+}

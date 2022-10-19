@@ -1,0 +1,16 @@
+.slider{
+    display: flex;
+    width: 350px;
+    scroll-snap-type: x mandatory;
+    column-gap: 20px;
+    overflow: auto;
+
+    article{
+        flex: 0 0 100%;
+        padding: 30px;
+        scroll-snap-align: start;
+        border-radius: 30px;
+        background-color: rgb(26, 1, 138);
+        color: white;
+    }   
+}
