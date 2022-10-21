@@ -1,0 +1,25 @@
+.loader2{
+    font-size: 4px;
+    width: 20em;
+    height: 20em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    div{
+        background: purple;
+        transform: scale(0);
+        animation: shrink 1s ease-in-out infinite;
+    }
+    @each $clave , $var in (1:.2s,2:.3s,3:.4s,4:.1s,5:.2s,6:.3s,7:0s,8:.1s,9:.2s) {
+        
+        div:nth-child(#{$clave}){
+            animation-delay: $var;
+        }
+    }
+    @keyframes shrink {
+   
+        50%{
+            transform: scale(1);
+        }
+    }
+}

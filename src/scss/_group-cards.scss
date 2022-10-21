@@ -1,0 +1,52 @@
+.group-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    div{
+        &:hover{
+            transform: translateY(-16px) rotate(3deg);
+        }
+        &:hover ∿ div{
+            transform: translateX(130px);
+        }
+        h3{
+            font-size: 25px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 25px;
+        }
+        height: 200px;
+        width: 250px;
+        color: white;
+        padding: 30px;
+        border-radius: 14px;
+        box-shadow: 12px 0px 32px -12px black;
+        margin-left: -130px;
+        transition: .25s ease-in-out; 
+        cursor: pointer;
+        position: relative;
+    }
+    div:nth-child(1){
+        background-color: brown;
+        z-index: 1;
+    }
+    div:nth-child(2){
+        background-color: rgb(42, 3, 182);
+        z-index: 2;
+    }
+    div:nth-child(3){
+        background-color: rgb(33, 197, 12);
+        z-index: 3;
+    }
+    div:nth-child(4){
+        background-color: rgb(216, 8, 243);
+        z-index: 4;
+    }
+    div:nth-child(5){
+        background-color: rgb(223, 192, 17);
+        z-index: 5;
+    }
+    
+}

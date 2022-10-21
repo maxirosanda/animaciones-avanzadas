@@ -1,7 +1,7 @@
 .input1{
     width: 15.6em;
     height: 3em;
-    font-size: 32px;
+    font-size: 16px;
     position: relative;
     margin: 2.15em;
     display: grid;
@@ -16,7 +16,7 @@
         padding:  .625em;
  
         &:focus + span,&:valid + span {
-            top: - 1em;
+            top: - 1.15em;
             left: 1em;
             font-size: .875em;
             padding: 0 .625em;
@@ -25,7 +25,7 @@
     }
     span{
         left: 0;
-        top: 0.6em;
+        top: 0.4em;
         position: absolute;
         margin: 10px;
         pointer-events: none;

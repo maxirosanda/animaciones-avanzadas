@@ -1,0 +1,46 @@
+.container-load{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.849);
+
+}
+.loader{
+    height: 50px;
+    width: 100px;
+    animation: spinner 3s linear infinite;
+    transform-origin:  bottom center;
+    
+    
+    &::after,&::before{
+        content: "";
+        display: block;
+        background-color: #7248f3;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transform: scale(0);
+        animation: load 1.5s linear infinite;
+    }
+    &::after{
+        background-color: #ff94f0;
+        animation-delay: .8s;
+    }
+    @keyframes spinner {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes load {
+     
+        50%{
+            transform: scale(1);
+        }
+     
+    }
+}
+

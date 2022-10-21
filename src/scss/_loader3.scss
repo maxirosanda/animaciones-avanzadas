@@ -1,0 +1,20 @@
+.loader3{
+    background-color: aqua;
+    margin: 10px;
+  
+    polygon{
+        
+        stroke: #fff;
+        stroke-width: 2px;
+        fill: transparent;
+        stroke-dasharray: 17;
+        animation: anima  2.5s cubic-bezier(0.35, 0.4, 0.63, 0.95) infinite;
+        
+    }
+   
+    @keyframes anima {
+        to{
+            stroke-dashoffset: -136;
+        }
+    }
+}
