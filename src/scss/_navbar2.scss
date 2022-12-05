@@ -1,0 +1,50 @@
+.navbar2{
+    background-color: brown;
+  
+    .menu{
+        color: white;
+        display: none;
+        padding: 10px;
+        @media(max-width:578px){
+            display: block;   
+        }
+    }
+    ul{
+        display: flex;
+        list-style-type:none;
+        justify-content: end;
+        align-items: center;
+        height: 50px;
+        @media(max-width:578px){
+            overflow: hidden;
+            height: 0px;
+            flex-direction: column;
+            align-items: center;
+           
+           
+        }
+        li a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+    }
+
+        .show{
+            animation: show .4s ease-in-out forwards;
+            @keyframes show {  100% { height: 190px;} }
+        }
+        .hidden{
+           
+            animation: hidden .4s ease-in-out ;
+            @keyframes hidden {0%{height: 190px}99%{ opacity: 1;}100%{ height: 0px;}}
+        }
+  
+    
+    
+
+}
+   
+
+    

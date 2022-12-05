@@ -1,17 +1,20 @@
 .card2{
     font-size: 15px;
-    display: grid;
-    place-items: center;
     position: relative;
     height: 15em;
     width: 10em;
-    background-color: #191919;
+    margin: 15px;
+    background-color: #ffffff;
+    box-shadow: 12px 0px 32px -12px black;
     border-radius: 1em;
     overflow: hidden;
-    span{
+    .card2-info{
+        inset: .3em;
         position: absolute;
         z-index: 2;
-        color: white;
+        color: rgb(0, 0, 0);
+        display: grid;
+        place-items: center;
     }
     &::before{
         content: "";
@@ -26,7 +29,7 @@
     &::after{
         content: "";
         position: absolute;
-        background-color: #191919;
+        background-color: #ffffff;
         inset: .3em;
         border-radius: .5em;
     }

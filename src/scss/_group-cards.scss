@@ -7,7 +7,7 @@
         &:hover{
             transform: translateY(-16px) rotate(3deg);
         }
-        &:hover ∿ div{
+        &:hover ~ div{
             transform: translateX(130px);
         }
         h3{
